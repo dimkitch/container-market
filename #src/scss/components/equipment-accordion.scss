@@ -1,0 +1,26 @@
+$b: '.equipment-accordion';
+$c: '.accordion-item';
+
+#{$b} {
+  // .accordion-item__title
+  &__title {
+    display: flex;
+  }
+
+  #{$c} {
+    // .accordion-item__header
+    &__header {
+      padding: 18px 50px 8px 18px;
+    }
+
+    // .accordion-item__title
+    &__title {
+      display: flex;
+      align-items: center;
+    }
+    // .accordion-item__header-icon
+    &__header-icon {
+      right: 18px;
+    }
+  }
+}

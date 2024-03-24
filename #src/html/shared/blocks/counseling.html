@@ -1,0 +1,45 @@
+<div class="counseling">
+  <div class="container">
+    <div class="counseling__inner">
+      <div class="counseling__info">
+        <h2 class="counseling__title title-xxl color-white">Консультация специалиста</h2>
+        @@include('../cards/manager-card.html')
+      </div>
+      <form class="counseling__form">
+        <div class="counseling__form-item">
+          @@include('../../common/custom-input.html',{placeholder: "Имя"})
+        </div>
+        <div class="counseling__form-items">
+          @@include('../../common/custom-input.html',{placeholder: "Телефон"})
+          @@include('../../common/custom-input.html',{placeholder: "E-mail"}) 
+        </div>
+        <label class="counseling__form-file custom-input text-lg" data-custom-input>
+          <div class="counseling__icon-wrapper">
+            <svg class="counseling__icon icon">
+              <use xlink:href="#icon-outline-link" />
+            </svg>
+          </div>
+          <input
+            type="file"
+            accept=".doc,.docx,.jpg,.jpeg,.gif,.pdf,.zip,.rar"
+            class="custom-input__input text-2md"
+          />
+          Прикрепить ТЗ
+        </label>
+        <div>
+          <button class="counseling__form-submit custom-button custom-button--danger custom-button--with-icon-right custom-button--xxl">
+            <span class="text-xl">
+              Отправить
+            </span>
+            <svg class="icon">
+              <use xlink:href="#icon-outline-chevron-right" />
+            </svg>
+          </button>
+        </div>
+        <div class="counseling__form-policy text-sm color-secondary-light2">
+          Согласен на обработку персональных данных в соответствии с ФЗ от 27.07.2006 г. № 152-ФЗ «О персональных данных»
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

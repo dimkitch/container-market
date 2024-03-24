@@ -1,0 +1,145 @@
+$b: '.kit-page';
+
+#{$b} {
+  // .kit-page__inner
+  &__inner {
+
+  }
+
+  // .kit-page__section
+  &__section {
+    padding: 20px;
+
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+  }
+
+  // .kit-page__title
+  &__title {
+    padding: 40px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    background-color: $color-kit-bg; 
+  }
+  .icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+.colors {
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    grid-row-gap: 20px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    
+    &-color {
+      width: 140px;
+      height: 80px;
+      border-radius: 50px;
+    }
+
+    &-text {
+      margin-left: 30px;
+    }
+  }
+}
+
+.typography {
+  table {
+    width: 100%;
+    color: #0F172A;
+
+    &:not(:last-child) {
+      margin-bottom: 70px;
+    }
+    
+    &:last-child {
+      th,td {
+        padding: 9px 20px;
+      }
+      thead {
+        margin-bottom: 14px;
+
+        &::before {
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  caption {
+    text-align: start;
+    padding: 0 20px;
+  }
+
+  thead {
+    position: relative;
+    padding: 39px 0;
+
+    th {
+      text-transform: uppercase;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 24px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #CBD5E1;
+    }
+  }
+
+  th,td {
+    padding: 39px 20px;
+    text-align: start;
+  }
+}
+
+.buttons {
+  &__item {
+    display: block;
+    
+    &:not(:last-child) {
+      margin-bottom: 96px;
+    }
+
+    &-row {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: 19px;
+      }
+      .custom-button {
+        &:not(:last-child) {
+          margin-right: 26px;
+        }
+      }
+    }
+  }
+}
+
+.tags {
+  &__item {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    & .custom-tag {
+      &:not(:last-child) {
+        margin-right: 83px;
+      }
+    }
+  }
+}

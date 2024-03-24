@@ -1,0 +1,27 @@
+$b: '.error-page';
+
+#{$b} {
+  // .error-page__inner
+  &__inner {
+    padding-bottom: 70px;
+    text-align: center;
+  }
+
+  // .error-page__preview
+  &__preview {
+    max-height: 206px;
+    max-width: 536px;
+    margin: 0 auto 31px auto;
+  }
+
+  // .error-page__img
+  &__img {
+    height: 100%;
+    width: 100%;
+  }
+
+  // .error-page__title 
+  &__title {
+    margin-bottom: 40px;
+  }
+}

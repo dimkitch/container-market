@@ -1,0 +1,41 @@
+$b: '.service-block';
+
+#{$b} {
+  // .service-block__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 53% auto;
+    gap: 109px;
+    
+    @include desktop-lg() {
+      grid-template-columns: 58% auto;
+      gap: 24px;
+    }
+
+    @include tablet() {
+      display: block;
+    } 
+  }
+  
+  // .service-block__info
+  &__info {
+    @include tablet() {
+      margin-bottom: 24px;
+    } 
+  }
+
+  // .service-block__title
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .service-block__subtitle
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  // .service-block__form
+  &__form {
+    max-width: 490px;
+  }
+}

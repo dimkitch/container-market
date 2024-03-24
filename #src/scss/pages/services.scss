@@ -1,0 +1,21 @@
+$b: '.services-page';
+
+#{$b} {
+  // .services-page__services-cards
+  &__services-cards {
+    margin-bottom: 100px;
+
+    @include tablet() {
+      margin-bottom: 70px;
+    }
+  }
+  
+  // .services-page__services-info
+  &__services-info {
+    margin-bottom: 100px;
+    
+    @include tablet() {
+      margin-bottom: 70px;
+    }
+  }
+}

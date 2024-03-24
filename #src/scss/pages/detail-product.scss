@@ -1,0 +1,17 @@
+$b: '.detail-product-page';
+
+#{$b} {
+  // .detail-product-page__main-product
+  &__main-product {
+    margin-bottom: 69px;
+  }
+  // .detail-product__actions-slider
+  &__actions-slider {
+    margin-bottom: 100px;
+  }
+  // .detail-product__our-clients
+  &__our-clients {
+    margin-bottom: 100px;
+  }
+  // .detail-product__counseling
+}

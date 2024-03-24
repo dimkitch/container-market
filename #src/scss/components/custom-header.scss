@@ -1,0 +1,27 @@
+$b: '.custom-header';
+
+#{$b} {
+  // .custom-header__top
+  &__top {
+    padding-top: 8px;
+    padding-bottom: 15px;
+    background-color: $color-dark-deep;
+  }
+  
+  // .custom-header__menu
+  &__menu {
+    // .custom-header__menu-list
+    &-list {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    // .custom-header__menu-item
+    &-item {
+      &:not(:last-child) {
+        margin-right: 23px;
+      }
+    }
+  }
+}

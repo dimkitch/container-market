@@ -1,0 +1,40 @@
+<form class="dealer-form">
+  <div class="dealer-form__inner">
+    <div class="dealer-form__item">
+      @@include('../common/custom-input.html',{placeholder: "ФИО"})
+    </div>
+    <div class="dealer-form__item">
+      @@include('../common/custom-input.html',{placeholder: "Название организации"})
+    </div>
+    <div class="dealer-form__items">
+      @@include('../common/custom-input.html',{placeholder: "Телефон"})
+      @@include('../common/custom-input.html',{placeholder: "E-mail"})
+    </div>
+    <label class="dealer-form__file custom-input text-lg" data-custom-input>
+      <div class="dealer-form__icon-wrapper">
+        <svg class="dealer-form__icon icon">
+          <use xlink:href="#icon-outline-link" />
+        </svg>
+      </div>
+      <input
+        type="file"
+        accept=".doc,.docx,.jpg,.jpeg,.gif,.pdf,.zip,.rar"
+        class="custom-input__input text-2md"
+      />
+      Прикрепить ТЗ
+    </label>
+    <div class="dealer-form__action">
+      <button class="dealer-form__submit custom-button custom-button--danger custom-button--with-icon-right custom-button--xxl">
+        <span class="text-xl">
+          Отправить
+        </span>
+        <svg class="icon">
+          <use xlink:href="#icon-outline-chevron-right" />
+        </svg>
+      </button>
+    </div>
+    <div class="dealer-form__policy text-sm color-secondary-light2">
+      Согласен на обработку персональных данных в соответствии с ФЗ от 27.07.2006 г. № 152-ФЗ «О персональных данных»
+    </div>
+  </div>
+</form>

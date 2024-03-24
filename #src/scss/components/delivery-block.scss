@@ -1,0 +1,40 @@
+$b: '.delivery-block';
+
+#{$b} {
+  // .delivery-block__inner 
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 54%;
+    gap: 70px;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  // .delivery-block__title
+  &__title {
+    margin-bottom: 47px;
+  }
+
+  // .delivery-block__description
+  &__description {
+    margin-bottom: 47px;
+    max-width: 550px;
+  }
+
+  // .delivery-block__preview
+  &__preview {
+    height: 380px;
+    
+    @include tablet {
+      margin-bottom: 70px;
+    }
+  }
+
+  // .delivery-block__img
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+}

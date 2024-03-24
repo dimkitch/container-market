@@ -1,0 +1,16 @@
+$b: '.products-listing';
+
+#{$b} {
+  // .products-listing__inner
+  &__inner {
+
+  }
+
+  // ./products-listing__body
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    row-gap: 24px;
+  }
+}

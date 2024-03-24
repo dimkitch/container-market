@@ -1,0 +1,35 @@
+$b: '.info-block';
+
+#{$b} {
+  // .info-block__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 54% auto;
+    gap: 47px;
+
+    @include desktop-lg {
+      gap: 24px;
+    }
+
+    @include low-desktop {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  // .info-block__title
+  &__title {
+    margin-bottom: 24px;
+    
+    @include low-desktop {
+      font-size: 34px;
+    }
+
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+}

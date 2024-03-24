@@ -1,0 +1,128 @@
+$b: '.sale-rental-relinking';
+
+$tab-gap: 15px;
+$tab-gap: 7px !default;
+
+@include tablet() {
+  $tab-gap:'';
+}
+
+#{$b} {
+  // .sale-rental-relinking__tabs
+  &__tabs {
+    .custom-tabs__inner {
+      display: grid;
+      grid-template-columns: 42% auto;
+
+      @include low-desktop() {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include tablet() {
+        grid-template-columns: 42% auto;
+      }
+
+      @include mobile() {
+        display: block;
+      }
+    }
+
+    .custom-tabs__header {
+      align-self: start;
+      margin: 0 -$tab-gap;
+      padding-right: 66px;
+
+      @include low-desktop() {
+        padding-right: 42px;
+      }
+      
+      @include tablet() {
+        flex-wrap: wrap;
+      }
+
+      @include mobile() {
+        margin-bottom: 43px;
+      }
+    }
+
+    .custom-tabs__item {
+      padding: $tab-gap;
+      transition: $transition-default;
+      &:hover {
+        color: $color-dark-light;
+      }
+
+      @include tablet() {
+        font-size: 34px;
+      }
+
+      @include mobile() {
+        font-size: 24px;
+      }
+
+      &:not(:last-child) {
+        margin: 0;
+      }
+
+      &.active-tab {
+        &::after {
+          height: 6px;
+          width: calc(100% - (#{$tab-gap} * 2));
+          left: $tab-gap;
+          bottom: 5px;
+        }
+      }
+    }
+  }
+
+  // .sale-rental-relinking__list
+  &__list {
+    padding-left: 67px;
+    @include low-desktop() {
+      padding-left: 32px;
+    }
+
+    @include mobile() {
+      padding-left: 25px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: -1px;
+      top: 0;
+      height: 100%;
+      width: 2px;
+      display: block;
+      background-color: $color-dark-light;
+    }
+
+    // .sale-rental-relinking__list-item
+    &-item {
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-bottom: 3px;
+
+        @include mobile() {
+          margin-bottom: 14px;
+        }
+      }
+    }
+  }
+
+  // .sale-rental-relinking__link
+  &__link {
+    padding: 3px 0;
+    transition: $transition-default;
+    &:hover {
+      color: $color-danger;
+      #{$b}__link-shape {
+      }
+    }
+    // .sale-rental-relinking__link-shape
+    &-shape {
+    }
+  }
+
+}

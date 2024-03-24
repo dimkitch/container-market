@@ -1,0 +1,23 @@
+$b: '.service-card';
+
+#{$b} {
+  // .service-card__inner
+  &__inner {
+    padding: 16px 18px;
+    border-radius: 12px;
+    background-color: $color-muted;
+    height: 100%;
+  }
+
+  // .service-card__icon-wrapper
+  &__icon-wrapper {
+    width: 33px;
+    height: 33px;
+    margin-bottom: 10px;
+  }
+
+  .icon {
+    width: 100%;
+    height: 100%;
+  }
+}

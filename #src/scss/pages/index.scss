@@ -1,0 +1,113 @@
+$b: '.main-page';
+
+#{$b} {
+  // .main-page__sale-rental-cabins
+  &__sale-rental-cabins {
+    margin-bottom: 54px;
+
+    @include tablet() {
+      margin-bottom: 70px;
+    }
+  }
+  
+  // .main-page__about-company
+  &__about-company {
+    margin-bottom: 71px;
+  }
+
+  // .main-page__sale-rental-relinking
+  &__sale-rental-relinking {
+    margin-bottom: 70px;
+  }
+
+  // .main-page__actions-slider
+  &__actions-slider {
+    margin-bottom: 70px;
+  }
+
+  // .main-page__warranty
+  &__warranty {
+    margin-bottom: 100px;
+  }
+
+  // .main-page__showcase
+  &__showcase {
+    &:not(:last-child) {
+      margin-bottom: 70px
+    }
+  }
+  // .main-page__realization-projects
+  &__realization-projects {
+    position: relative;
+    // padding-bottom: 100px;
+    margin-bottom: 100px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: $color-secondary-light;
+    }
+  }
+  // .main-page__our-clients
+  &__our-clients {
+    margin-bottom: 100px;
+    
+    @include mobile() {
+      margin-bottom: 70px;
+    }
+  }
+
+  // .main-page__letters-appreciation
+  &__letters-appreciation {
+    padding: 54px 0;
+    margin-bottom: 118px;
+    background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+
+    @include mobile() {
+      margin-bottom: 70px;
+    }
+  }
+
+  // .main-page__unfolding-content
+  &__unfolding-content {
+    margin-bottom: 70px;
+  }
+
+  // .main-page__counseling
+  // &__counseling {
+  //   position: relative;
+  //   padding-top: 69px;
+  //   padding-bottom: 111px;
+  //   background-image: url('../../img/counseling-bg.png');
+  //   background-size: 50% auto!important;
+  //   background-repeat: no-repeat !important;
+  //   background-position: bottom 0 left 87px !important;
+  //   background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+    
+  //   @include mobile() {
+  //     padding-top: 50px;
+  //   }
+
+  //   &::before {
+  //     content: '';
+  //     position: absolute;
+  //     left: 0;
+  //     top: 0;
+  //     z-index: -1;
+  //     display: block;
+  //     width: 100%;
+  //     height: 100%;
+  //     background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+  //   }
+  // }
+
+  // .main-page__articles-slider
+  &__articles-slider {
+    margin-bottom: 70px;
+  }
+}

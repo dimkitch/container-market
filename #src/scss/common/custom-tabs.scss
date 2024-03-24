@@ -1,0 +1,75 @@
+$b: '.custom-tabs';
+#{$b} {
+  // .custom-tabs__inner
+  &__inner {}
+
+  // .custom-tabs__header
+  &__header {
+    display: flex;
+    align-items: center;
+	  margin-bottom: 32px;
+  }
+
+  // .custom-tabs__body
+  &__body {
+    // display: none;
+    // height: 0;
+    width: 100%;
+  }
+
+  // .custom-tabs__item 
+  &__item {
+    position: relative;
+    cursor: pointer;
+    color: $color-secondary-light4;
+    transition: $transition-default;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+    
+    // .custom-tabs__item .active-tab
+    &.active-tab {
+      color: $color-dark-light;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: $color-dark-light;
+      }
+    }
+  }
+
+  .is-hidden-tab {
+    display: none;
+    width: 100%;
+  }
+
+  .is-visible-tab {
+    display: block;
+    width: 100%;
+  }
+
+  [data-tab-item] {
+    background-color: #fff;
+  }
+
+  [data-tab-item]:not(:first-child) {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+

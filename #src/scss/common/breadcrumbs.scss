@@ -1,0 +1,35 @@
+$b: '.breadcrumbs';
+
+#{$b} {
+  margin-bottom: 20px;
+
+  // .breadcrumbs__list
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  // .breadcrumbs__item
+  &__item {
+    display: flex;
+    align-items: center;
+    transition: $transition-default;
+    cursor: pointer;
+
+    &:not(:last-child)::after {
+      content: '';
+      display: block;
+      width: 14px;
+      height: 1px ;
+      margin: 0 4px;
+      background-color: $color-dark;
+    }
+
+    &:last-child {
+      user-select: none;
+      pointer-events: none;
+      touch-action: none;
+      opacity: 0.5;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+$b: '.product-tabs';
+
+#{$b} {
+
+}
+.product-description {
+  // .product-description__title
+  &__title {
+    margin-bottom: 18px;
+  }
+}
+.product-characteristics {
+  // .product-characteristics__list
+  &__list {
+    // .product-characteristics__list-item
+    &-item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 8px 10px;
+      border-bottom: 1px solid $color-secondary-light;
+      
+      @include mobile {
+        gap: 10px;
+      }
+    }
+  }
+}
+.product-delivery {
+  // .product-delivery__inner
+  &__inner {}
+  .delivery-accordion {
+    &:not(:last-child) {
+      margin-bottom: 18px;
+    }
+  }
+}

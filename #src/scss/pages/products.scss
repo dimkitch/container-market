@@ -1,0 +1,22 @@
+$b: '.products-page';
+
+#{$b} {
+  // .products-page__inner
+  &__inner {
+
+  }
+  .aside {position: sticky; top: 0; height: 200px;
+    width: 220px;
+  }
+  .products {
+    width: calc(100% - 220px);
+    padding-left: 40px;
+  }
+  // .products-page__wrapper
+  &__wrapper {
+    // display: grid;
+    // grid-template-columns: 19% auto;
+    // gap: 40px;
+    // overflow-y: auto;
+  }
+}

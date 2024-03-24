@@ -1,0 +1,30 @@
+$b: '.about-us-page';
+
+#{$b} {
+  // .about-us-page__benefits
+  &__benefits {
+    margin-bottom: 70px;
+  }
+  
+  // .about-us-page__info-block
+  &__info-block {
+    margin-bottom: 70px;
+  }
+
+  // .about-us-page__warranty
+  &__warranty {
+    margin-bottom: 100px;
+  }
+
+  // .about-us-page__our-clients
+  &__our-clients {
+    margin-bottom: 100px;
+  }
+
+  // .about-us-page__letters-appreciation
+  &__letters-appreciation {
+    margin-bottom: 100px;
+    padding: 54px 0;
+    background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+  }
+}

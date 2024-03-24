@@ -1,0 +1,26 @@
+$b: '.our-clients';
+
+#{$b} {
+  // .our-clients__title
+  &__title {
+    max-width: 530px;
+    margin-bottom: 75px;
+  }
+
+  // .our-clients__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  // .our-clients__item
+  &__item {
+  }
+
+  // .our-clients__img
+  &__img {
+    width: auto;
+    height: 80px;
+  }
+}

@@ -1,0 +1,42 @@
+$b: '.letters-appreciation';
+
+#{$b} {
+  // .letters-appreciation__slider
+  &__slider {
+    overflow: unset;
+  }
+
+  // .letters-appreciation__img-wrapper
+  &__img-wrapper {
+  }
+
+  // .letters-appreciation__img
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .letters-appreciation__navigation
+  &__navigation {
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    margin-top: 24px;
+  }
+  
+  // .letters-appreciation__btn
+  &__btn {
+    &.swiper-button-disabled {
+      background-color: $color-white;
+      box-shadow: 0 0 0 1px $color-secondary;
+      color: $color-secondary;
+      opacity: 0.5;
+      cursor: unset;
+    }
+  }
+
+  // .letters-appreciation__pagination
+  // &__pagination {
+  //   padding: 0 16px;
+  // }
+}

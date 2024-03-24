@@ -1,0 +1,39 @@
+<div class="actions-slider">
+  <div class="container">
+    <div class="actions-slider__inner">
+      <h2 class="actions-slider__title title-xxl">Акции</h2>
+      <div class="swiper actions-slider__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"> 
+            @@include('../../shared/cards/small-product-card.html')
+          </div>
+          <div class="swiper-slide"> 
+            @@include('../../shared/cards/small-product-card.html')
+          </div>
+          <div class="swiper-slide"> 
+            @@include('../../shared/cards/small-product-card.html')
+          </div>
+          <div class="swiper-slide"> 
+            @@include('../../shared/cards/small-product-card.html')
+          </div>
+          <div class="swiper-slide"> 
+            @@include('../../shared/cards/small-product-card.html')
+          </div>
+        </div>
+        <div class="actions-slider__navigation custom-navigation text-lg">
+          <button class="actions-slider__btn actions-slider__btn-prev custom-button custom-button--danger-outline custom-button--md">
+            <svg class="icon">                      
+              <use xlink:href="#icon-outline-chevron-left" />                  
+            </svg>                  
+          </button>
+          <div class="actions-slider__pagination custom-pagination"></div>
+          <button class="actions-slider__btn actions-slider__btn-next custom-button custom-button--danger-outline custom-button--md">
+            <svg class="icon">                      
+              <use xlink:href="#icon-outline-chevron-right" />                  
+            </svg>                  
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

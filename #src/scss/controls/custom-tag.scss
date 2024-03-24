@@ -1,0 +1,50 @@
+$b: '.custom-tag';
+
+#{$b} {
+  // .custom-tag__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    transition: $transition-default;
+    cursor: pointer;
+
+    // .custom-tag--size-md .custom-tag__inner
+    #{$b}--size-md & {
+      padding: 13px 18px;
+    }
+
+    // .custom-tag--size-lg .custom-tag__inner
+    #{$b}--size-lg & {
+      padding: 8px 10px;
+    }
+
+    // .custom-tag--theme-muted .custom-tag__inner
+    #{$b}--theme-muted & {
+      color: $color-dark;
+      background-color: $color-muted;
+
+      &:active {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+
+      @include hover {
+        color: $color-white;
+        background-color: $color-dark;
+      }
+    }
+    
+    // .custom-tag--is-active .custom-tag__inner
+    #{$b}--is-active & {
+      color: $color-white;
+      background-color: $color-dark;
+    }
+  }
+
+  // .custom-tag__icon
+  &__icon {
+    width: 16px;
+    height: 16px;
+  }
+}

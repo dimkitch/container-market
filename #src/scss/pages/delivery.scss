@@ -1,0 +1,33 @@
+$b: '.delivery-page';
+
+#{$b} {
+  // .delivery-page__info
+  &__info {
+    display: grid;
+    grid-template-columns: 800px auto;
+    gap: 26px;
+    margin-bottom: 70px;
+
+    @include low-desktop {
+      display: block;
+    }
+  }
+
+  // .delivery-page__title
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  // .delivery-page__delivery-accordion
+  &__delivery-accordion {
+    max-width: 800px;
+    margin-bottom: 18px;
+
+    @include low-desktop {
+      max-width: unset;
+    }
+    &:last-child {
+      margin-bottom: 100px;
+    }
+  }
+}

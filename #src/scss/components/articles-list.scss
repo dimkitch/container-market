@@ -1,0 +1,27 @@
+$b: '.articles-list';
+
+#{$b} {
+  // .articles-list__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(2, calc((100% - 60px) / 2));
+    gap: 60px;
+    row-gap: 35px;
+    
+    @include desktop-lg {
+      gap: 50px;
+    }
+
+    @include low-desktop {
+      display: block;
+    }
+  }
+
+  .article-card {
+    &:not(:last-child) {
+      @include low-desktop {
+        margin-bottom: 35px;
+      }
+    }
+  }
+}

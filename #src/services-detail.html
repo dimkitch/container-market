@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOC</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  @@include('./html/svg_incloud.html') 
+  <div class="main-wrapper">
+    @@include('./html/custom-header.html') 
+    <main class="service-detail-page">
+      <div class="service-detail__inner main-layout">
+        <div class="service-detail__content">
+          @@include('./html/shared/blocks/service-block.html', {title: "Монтаж и демонтаж", subtitle: "Монтаж и демонтаж модульных зданий, штабов строительства из блок-контейнеров, установка и доставка блок-контейнеров на строительные участки.", description: "Модульные здания – компактное, недорогое быстровозводимое сооружение, используемое на строительных площадках, базах отдыха, охраняемых парковках для комфортного размещения и временного проживания. Ее эксплуатация зависит от правильности монтажа.<br><br>Для правильной установки Модульного здания не требуется наличие полноценного фундамента. Можно монтировать сооружения сверху блоков, свай, плит. Установкой и сборкой быстровозводимого здания должны заниматься профессионалы. Предварительно оцениваются особенности географического расположения, типы почв на месте, вид твердого покрытия, если таковое имеется так же при установке бытовки металлической на участке необходимо обеспечить не менее шести надежных точек опоры для конструкции. Для этих целей и используют бетонные блоки размером 40х40х20 см."})
+        </div>
+      </div>
+    </main>
+    @@include('./html/custom-footer.html')
+    @@include('./html/modals/modal-wrapper.html')
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>

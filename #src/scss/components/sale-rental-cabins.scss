@@ -1,0 +1,89 @@
+$b: '.sale-rental-cabins';
+
+#{$b} {
+  // .sale-rental-cabins__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: auto 32%;
+    gap: 130px;
+
+    @include desktop-lg() {
+      grid-template-columns: auto 35%;
+      gap: 42px;
+    }
+
+    @include low-desktop() {
+      grid-template-columns: auto 45%;
+      gap: 42px;
+    }
+
+    @include tablet() {
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    @include mobile {
+      display: block;
+    }
+  }
+
+  // .sale-rental-cabins__content
+  &__content {
+
+    @include mobile {
+      margin-bottom: 40px;
+    }
+
+  }
+  
+  // .sale-rental-cabins__title
+  &__title {
+    margin-bottom: 30px;
+
+    @include mobile-md() {
+      margin-bottom: 18px;
+    }
+  }
+
+  // .sale-rental-cabins__sity
+  &__sity {
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 2px;
+      background-color: $color-danger;
+    }
+  }
+
+  // .sale-rental-cabins__tags
+  &__tags {
+    display: flex;
+    align-items: center;
+    margin: 0 -4px;
+    flex-wrap: wrap;
+
+    @include tablet() {
+      flex-wrap: wrap;
+    }
+
+    // .sale-rental-cabins__tags-item
+    &-item {
+      padding: 4px;
+    }
+  }
+
+  // .sale-rental-cabins__form
+  &__form {
+
+    // .sale-rental-cabins__form-title
+    &-title {
+      margin-bottom: 9px;
+    }
+  }
+}

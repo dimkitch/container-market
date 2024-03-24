@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOC</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  @@include('./html/svg_incloud.html') 
+  <div class="main-wrapper">
+    @@include('./html/custom-header.html') 
+    <main class="reviews-page">
+      <div class="reviews-page__inner main-layout">
+        <div class="container">
+          <h1 class="reviews-page__title title-xxl">
+            Отзывы
+          </h1>
+          <section class="reviews-page__letters-appreciation letters-appreciation">
+            <div class="swiper letters-appreciation__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation1.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation2.png" alt="">
+                  </div>
+                </div >
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation3.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation4.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation4.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation4.png" alt="">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="letters-appreciation__img-wrapper">
+                    <img class="letters-appreciation__img" src="../../img/letters-appreciation/letters-appreciation4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="letters-appreciation__navigation custom-navigation text-lg">
+                <button class="letters-appreciation__btn-prev custom-button custom-button--danger-outline custom-button--md">
+                  <svg class="icon">                      
+                    <use xlink:href="#icon-outline-chevron-left" />                  
+                  </svg>                  
+                </button>
+                <div class="letters-appreciation__pagination custom-pagination"></div>
+                <button class="letters-appreciation__btn-next custom-button custom-button--danger-outline custom-button--md">
+                  <svg class="icon">                      
+                    <use xlink:href="#icon-outline-chevron-right" />                  
+                  </svg>                  
+                </button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+    @@include('./html/custom-footer.html')
+    @@include('./html/modals/modal-wrapper.html')
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>

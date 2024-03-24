@@ -1,0 +1,41 @@
+$b: '.centered-slider';
+
+#{$b} {
+  .swiper-slide {
+    width: 890px; 
+
+    @include tablet {
+      width: 581px;
+    }
+
+    @include mobile {
+      width: 316px;
+    }
+  }
+
+  // .centered-slider__img-wrapper
+  &__img-wrapper {
+    height: 429px;
+
+    @include tablet {
+      height: 340px;
+    }
+
+    @include mobile {
+      height: 250px;
+    }
+  }
+
+  // .centered-slider__img
+  &__img {
+    aspect-ratio: 890 / 429;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+
+    @include tablet {
+      aspect-ratio: 581px / 340px;
+    }
+  }
+}

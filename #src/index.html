@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOC</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  @@include('./html/svg_incloud.html') 
+  <div class="main-wrapper">
+    @@include('./html/custom-header.html') 
+    <main class="main-page">
+      <div class="main-page__inner main-layout">
+        <section class="main-page__sale-rental-cabins">
+          @@include('./html/pages/main/sale-rental-cabins.html')
+        </section>
+        <section class="main-page__about-company">
+          @@include('./html/pages/main/about-company.html')
+        </section>
+        <section class="main-page__sale-rental-relinking">
+          @@include('./html/pages/main/sale-rental-relinking.html')
+        </section>
+        <section class="main-page__actions-slider">
+          @@include('./html/pages/main/actions-slider.html') 
+        </section>
+        <section class="main-page__warranty">
+          @@include('./html/shared/blocks/warranty.html') 
+        </section>
+        <section class="main-page__showcase">
+          @@include('./html/pages/main/showcase.html') 
+        </section>
+        <section class="main-page__showcase">
+          @@include('./html/pages/main/showcase.html') 
+        </section>
+        <section class="main-page__showcase">
+          @@include('./html/pages/main/showcase.html') 
+        </section>
+        <!-- <section class="main-page__realization-projects">
+          @@include('./html/shared/sliders/realization-projects.html')
+        </section> -->
+        <section class="main-page__our-clients">
+          @@include('./html/shared/blocks/our-clients.html') 
+        </section>
+        <section class="main-page__letters-appreciation"> 
+          @@include('./html/shared/sliders/letters-appreciation.html') 
+        </section> 
+        <section class="main-page__articles-slider">
+          @@include('./html/pages/main/articles-slider.html')
+        </section>
+        <section class="main-page__unfolding-content">
+          <div class="container">
+            @@include('./html/common/unfolding-content.html')
+          </div>
+        </section>
+        <section class="main-page__counseling">
+          @@include('./html/shared/blocks/counseling.html')
+        </section>
+        <!-- <div class="custom-input custom-input--size-xl text-lg custom-input--is-error" data-custom-input style="margin-top:50px;">
+          <div class="custom-input__wrapper">
+            <input
+              class="custom-input__input text-2md"
+              type="text"
+            />
+            <div class="custom-input__placeholder text-md">Ваше имя</div>
+          </div>
+        </div> -->
+        <!-- <button data-open-modal> OPEN MODAL</button> -->
+      </div>
+    </main>
+    @@include('./html/custom-footer.html')
+    @@include('./html/modals/modal-wrapper.html')
+  </div>
+  <script src="./js/script.js"></script>
+</body>
+</html>

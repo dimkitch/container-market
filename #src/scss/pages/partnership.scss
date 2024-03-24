@@ -1,0 +1,45 @@
+$b: '.partnership-page';
+
+#{$b} {
+  // .partnership-page__info-block
+  &__info-block {
+    margin-bottom: 100px;
+  }
+  
+  // .partnership-page__service-block
+  &__service-block {
+    margin-bottom: 100px;
+
+    .service-block__title {
+      margin-bottom: 18px;
+    }
+
+    // .partnership-page__service-block .dealer-form
+    .dealer-form {
+      // .partnership-page__service-block .dealer-form__action 
+      &__action {
+        width: 100%;
+      }
+
+      // .partnership-page__service-block .dealer-form__submit
+      &__submit {
+        width: 100%;
+      }
+    }
+  }
+
+  // .partnership-page__warranty
+  &__warranty {
+    margin-bottom: 100px;
+  }
+  
+  // .partnership-page__our-clients
+  &__our-clients {
+    margin-bottom: 100px;
+  }
+
+  // .partnership-page__realization-projects
+  &__realization-projects {
+    margin-bottom: 100px;
+  }
+}

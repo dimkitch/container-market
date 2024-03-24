@@ -1,0 +1,50 @@
+<form class="form-calculate-price">
+  <div class="form-calculate-price__inner">
+    <div class="form-calculate-price__caption">
+      <div class="form-calculate-price__img-wrapper">
+        <img class="form-calculate-price__img" src="../../img/sale-rental-cabins-preview.png" alt="sale-rental-cabins-preview">
+      </div>
+      <div class="form-calculate-price__wrapper">
+        <div class="form-calculate-price__text fw-600 color-white">Подберем персональную акцию</div>
+        <div class="form-calculate-price__icon-wrapper">
+          <svg class="icon color-warning">
+            <use xlink:href="#icon-solid-bell" />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="form-calculate-price__fields">
+      <div class="form-calculate-price__fields-item">
+        @@include('../common/custom-input.html')
+      </div>
+      <div class="form-calculate-price__fields-items">
+        @@include('../common/custom-input.html')
+        @@include('../common/custom-input.html') 
+      </div>
+      <label class="form-calculate-price__file custom-input text-lg " data-custom-input>
+        <div class="form-calculate-price__icon-wrapper">
+          <svg class="form-calculate-price__icon icon">
+            <use xlink:href="#icon-outline-link" />
+          </svg>
+        </div>
+        <input
+          type="file"
+          accept=".doc,.docx,.jpg,.jpeg,.gif,.pdf,.zip,.rar"
+          class="custom-input__input text-2md"
+        />
+        Прикрепить ТЗ
+      </label>
+      <button class="form-calculate-price__submit custom-button custom-button--danger custom-button--with-icon-right custom-button--xxl">
+        <span class="text-xl">
+          Button
+        </span>
+        <svg class="icon">
+          <use xlink:href="#icon-outline-chevron-right" />
+        </svg>
+      </button>
+      <div class="form-calculate-price__policy text-sm color-secondary-light2">
+        Согласен на обработку персональных данных в соответствии с ФЗ от 27.07.2006 г. № 152-ФЗ «О персональных данных»
+      </div>
+    </div>
+  </div>
+</form>

@@ -1,0 +1,156 @@
+$b: '.counseling';
+
+#{$b} {
+  position: relative;
+  padding-top: 69px;
+  padding-bottom: 111px;
+  background-image: url('../../img/counseling-bg.png');
+  background-size: 50% auto!important;
+  background-repeat: no-repeat !important;
+  background-position: bottom 0 left 87px !important;
+  
+  @include mobile() {
+    padding-top: 50px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+  }
+  
+  // .counseling__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 606px auto;
+    gap: 114px;
+    
+    @include desktop-lg() {
+      gap: 36px;
+    }
+
+    @include low-desktop() {
+      grid-template-columns: 1fr 1fr;
+      gap: 27px;
+    }
+
+    @include mobile() {
+      display: block;
+    }
+  }
+  // .counseling__info
+  &__info {
+    @include mobile() {
+      margin-bottom: 27px;
+    }
+  }
+  // .counseling__title
+  &__title {
+    margin-bottom: 45px;
+    
+    @include low-desktop() {
+      margin-bottom: 25px;
+    }
+  }
+
+  // .counseling__preview
+  &__preview {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  // .counseling__img
+  &__img {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .counseling__managet
+  &__manager {
+    display: flex;
+  }
+
+  // .counseling__icon-wrapper
+  &__icon-wrapper {
+    width: 17px;
+    height: 17px;
+    min-width: 17px;
+    margin-right: 4px;
+  }
+
+  // .counseling__icon
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .counseling__form
+  &__form {
+    // .counseling__form-item
+    &-item {
+      margin-bottom: 10px;
+    }
+
+    // .counseling__form-items
+    &-items {
+      display: flex;
+      margin-bottom: 10px;
+
+      @include low-desktop() {
+        display: block;
+      }
+
+      .custom-input {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+
+          @include low-desktop() {
+            margin-right: unset;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    // .counseling__form-file
+    &-file {
+      display: inline-flex;
+      background-color: $color-muted;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: $transition-default;
+
+      &:hover {
+        color: $color-muted;
+        background-color: $color-dark;
+      }
+
+      .fields__icon-wrapper {
+        margin-right: 4px;
+        width: 17px;
+        height: 17px;
+        min-width: 17px;
+      }
+      
+      input {
+        display: none;
+      }
+    }
+
+    // .counseling__form-submit
+    &-submit {
+      width: auto;
+      margin-bottom: 8px;
+    }
+  }
+}

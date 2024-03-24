@@ -1,0 +1,184 @@
+.color {
+  // .color-dark
+  &-dark {
+    color: $color-dark;
+  }
+
+  // .color-white
+  &-white {
+    color: $color-white;
+  }
+  
+  // .color-danger
+  &-danger {
+    color: $color-danger;
+  }
+
+  // .color-primary
+  &-primary {
+    color: $color-primary;
+  }
+  
+  // .color-warning
+  &-warning {
+    color: $color-warning;
+  }
+  
+  // .color-secondary-light2
+  &-secondary-light2 {
+    color: $color-secondary-light2;
+  }
+
+  // .color-secondary-light6
+  &-secondary-light6 {
+    color: $color-secondary-light6;
+  }
+
+  // .color-secondary-light7
+  &-secondary-light7 {
+    color: $color-secondary-light7;
+  }
+
+  // .color-secondary-deep
+  &-secondary-deep {
+    color: $color-secondary-deep;
+  }
+  // .color-primary-light
+  &-primary-light {
+    color: $color-primary-light;
+  }
+}
+
+.title {
+  // .title-xxl
+  &-xxl { 
+    font-weight: 700; 
+    font-size: 46px;
+    line-height: 122%;
+
+    @include tablet() {
+      font-size: 34px;
+      line-height: 120%;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  // .title-xl
+  &-xl {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 122%;
+
+    @include low-desktop {
+      font-size: 24px;
+    }
+  }
+
+  // .title-2xl
+  &-2xl {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 122%;
+
+    @include low-desktop {
+      font-size: 24px;
+    }
+  }
+
+  // .title-md
+  &-md {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 122%;
+
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  // .title-ll
+  &-ll {
+    font-size: 20px;
+    line-height: 122%; 
+  }
+
+  // .title-lg
+  &-lg {
+  }
+}
+
+.text {
+  // .text-xxl
+  &-xxl {
+    font-size: 25px;
+    line-height: 120%; 
+  }
+
+  // .text-xl
+  &-xl {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  // .text-md
+  &-md {
+    font-size: 16px;
+    line-height: 125%;
+  }
+
+  // .text-lg
+  &-lg {
+    font-size: 14px;
+    line-height: 128%;
+  }
+
+  // .text-ll
+  &-ll {
+    font-size: 12px;
+    line-height: 117%;
+  }
+
+  // .text-sm
+  &-sm {
+    font-size: 12px;
+    line-height: 120%;
+  }
+
+  // .text-xs
+  &-xs {
+    font-size: 10px;
+    line-height: 120%;
+  }
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.tt-uppercase {
+  text-transform: uppercase;
+}
+
+.td-underline {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}

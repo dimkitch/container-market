@@ -1,0 +1,137 @@
+@mixin mobile-md {
+  @media (max-width: 575px) { @content; }
+}
+
+@mixin mobile-xl {
+  @media (max-width: 575px) { @content; }
+}
+
+@mixin mobile {
+  @media (max-width: 767px) { @content; }
+}
+
+@mixin tablet {
+  @media (max-width: 1023px) { @content; }
+}
+
+@mixin low-desktop {
+  @media (max-width: 1279px) { @content; }
+}
+
+@mixin desktop-lg {
+  @media (max-width: 1379px) { @content; }
+}
+
+@mixin low-desktop-lg {
+  @media (max-width: 1600px) { @content; }
+}
+
+@mixin hover {
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin lineClamp ($count) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -moz-box;
+  -moz-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: $count;
+  -webkit-box-orient: vertical;
+  line-clamp: $count;
+  box-orient: vertical;
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &:-ms-input-placeholder {
+    @content;
+  }
+}
+
+@mixin removeScrollBar {
+  &::-webkit-scrollbar-button {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 0;
+    background-color: transparent;
+  }
+  &::-webkit-resizer {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: 0;
+    height: 0;
+  }
+  &::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  scrollbar-width: none;
+}
+
+@mixin customScrollBar($size, $color-thumb, $color-track, $radius:0) {
+  scrollbar-color: $color-thumb $color-track;
+
+  &::-webkit-scrollbar-button {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar-track {
+    background-color: $color-track;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: $radius;
+    background-color: $color-thumb;
+  }
+  &::-webkit-resizer {
+    background-image: none;
+    background-repeat: no-repeat;
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+  scrollbar-width: thin;
+}
+
+@mixin gridcols($cols, $gap) {
+  display: grid;
+  grid-template-columns: repeat($cols, calc((100% - ($gap * (calc($cols - 1)))) / $cols ));
+  gap: $gap;
+}
+
+@mixin boxsize($size) {
+  width: $size;
+  height: $size;
+  min-width: $size;
+  min-height: $size;
+  max-width: $size;
+  max-height: $size;
+}
+
+@mixin borderInset($size, $color) {
+  box-shadow: inset 0 0 0 $size $color;
+}

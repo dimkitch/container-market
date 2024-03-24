@@ -1,0 +1,13 @@
+$b: '.articles-page';
+
+#{$b} {
+  // .articles-page__articles-list
+  &__articles-list {
+    margin-bottom: 100px;
+  }
+  
+  // .articles-page__article-big-card
+  &__article-big-card {
+    margin-bottom: 47px;
+  }
+}

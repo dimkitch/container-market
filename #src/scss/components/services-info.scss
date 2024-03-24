@@ -1,0 +1,23 @@
+$b: '.services-info';
+
+#{$b} {
+  // .services-info__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: 55% auto;
+    gap: 47px;
+    
+    @include desktop-lg() {
+      margin-bottom: 24px;
+    }
+
+    @include tablet() {
+      display: block;
+    }
+  }
+  
+  // .services-info__title
+  &__title {
+    margin-bottom: 24px;
+  }
+}

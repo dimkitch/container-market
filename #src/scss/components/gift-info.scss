@@ -1,0 +1,21 @@
+$b: '.gift-info';
+
+#{$b} {
+  // .gift-info__inner
+  &__inner {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+    padding: 14px 28px;
+  }
+
+  // .gift-info__icon-wrapper
+  &__icon-wrapper {
+    margin-right: 8px;
+  }
+
+  // .gift-info__description
+  &__description {
+
+  }
+}

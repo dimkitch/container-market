@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Статьи</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  @@include('./html/svg_incloud.html') 
+  <div class="main-wrapper">
+    @@include('./html/custom-header.html') 
+    <main class="articles-page">
+      <div class="articles-page__contnet main-layout">
+        <div class="articles-page__inner">
+          <section class="articles-page__article-big-card">
+            <div class="container">
+              @@include('./html/shared/cards/article-big-card.html')
+            </div>
+          </section>
+          <section class="articles-page__articles-list">
+            @@include('./html/pages/articles/articles-list.html')
+          </section>
+          <section class="articles-page__counseling">
+            @@include('./html/shared/blocks/counseling.html')
+          </section>
+        </div>
+      </div>
+    </main>
+    @@include('./html/custom-footer.html')
+    @@include('./html/modals/modal-wrapper.html') 
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>

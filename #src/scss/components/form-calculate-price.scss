@@ -1,0 +1,131 @@
+$b: '.form-calculate-price';
+
+#{$b} {
+  // .form-calculate-price__inner
+  &__inner {
+
+  }
+
+  // .form-calculate-price__caption
+  &__caption {
+    display: flex;
+    background-color: $color-primary;
+    margin-bottom: 8px;
+  }
+
+  // .form-calculate-price__img-wrapper
+  &__img-wrapper {
+    max-width: 116px;
+    
+    @include mobile {
+      max-width: 92px;
+    }
+  }
+
+  // .form-calculate-price__img
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+
+    @include mobile {
+      object-fit: unset;
+    }
+  }
+
+  // .form-calculate-price__wrapper
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 28px 10px 15px;
+
+    @include tablet {
+      padding: 10px 13px 10px 0;
+    }
+  }
+
+  // .form-calculate-price__text
+  &__text {
+    padding-right: 8px;
+  } 
+
+  // .form-calculate-price__icon-wrapper
+  &__icon-wrapper {
+    width: 24px;
+    height: 24px;
+    min-width: 24px;
+  }
+
+  // .form-calculate-price__icon
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  // .form-calculate-price__fields
+  &__fields {
+
+    // .form-calculate-price__fields-item
+    &-item {
+      margin-bottom: 10px;
+    }
+
+    // .form-calculate-price__fields-items
+    &-items {
+      display: flex;
+      margin-bottom: 10px;
+
+      @include tablet() {
+        display: block;
+      }
+
+      .custom-input {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+
+          @include tablet() {
+            margin-right: unset;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  // .form-calculate-price__file
+  &__file {
+    display: inline-flex;
+    background-color: $color-muted;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: $transition-default;
+
+    &:hover {
+      color: $color-muted;
+      background-color: $color-dark;
+    }
+    .form-calculate-price__icon-wrapper {
+      margin-right: 4px;
+      width: 17px;
+      height: 17px;
+      min-width: 17px;
+    }
+    
+    input {
+      display: none;
+    }
+  }
+
+  // .form-calculate-price__submit
+  &__submit {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+}

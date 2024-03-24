@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOC</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  @@include('./html/svg_incloud.html') 
+  <div class="main-wrapper">
+    @@include('./html/custom-header.html') 
+    <main class="about-us-page">
+      <div class="about-us-page__contnet main-layout">
+        <div class="about-us-page__inner">
+          <section class="about-us-page__benefits">
+            @@include('./html/pages/about-us/benefits.html')
+          </section>
+          <section class="about-us-page__info-block">
+            @@include('./html/shared/blocks/info-block.html')
+          </section>
+          <section class="about-us-page__warranty">
+            @@include('./html/shared/blocks/warranty.html') 
+          </section>
+          <section class="about-us-page__our-clients">
+            @@include('./html/shared/blocks/our-clients.html') 
+          </section>
+          <section class="about-us-page__letters-appreciation">
+            @@include('./html/shared/sliders/letters-appreciation.html') 
+          </section>
+          <section class="about-us-page__counseling">
+            @@include('./html/shared/blocks/counseling.html')
+          </section>
+        </div>
+      </div>
+    </main>
+    @@include('./html/custom-footer.html')
+    @@include('./html/modals/modal-wrapper.html')
+    <script src="./js/script.js"></script>
+  </div>
+</body>
+</html>

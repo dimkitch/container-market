@@ -1,0 +1,18 @@
+$b: '.reviews-page';
+
+#{$b} {
+  // .reviews-page__title
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  // .reviews-page__letters-appreciation
+  &__letters-appreciation {
+    margin-bottom: 100px;
+    
+    .swiper-slide {
+      filter: grayscale(100%);
+      border: 1px solid $color-secondary-light;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+$b: '.warranty';
+
+#{$b} {
+  background: linear-gradient(112.11deg, #7357C2 37.59%, #480BAB 81.97%);
+  // .warranty__inner
+  &__inner {
+    display: flex;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    align-items: flex-end;
+    // gap: 140px;
+    padding-top: 50px;
+    background-repeat: no-repeat;
+    background-position: center right 20px;
+    overflow: hidden;
+  }
+
+  // .warranty__content
+  &__content {
+    padding-bottom: 59px;
+    width: 40%;
+    margin-right: 29px;
+  }
+
+  // .warranty__icon-wrapper
+  &__icon-wrapper {
+    width: 47px;
+    height: 47px;
+    margin-bottom: 19px;
+  }
+  
+  // .warranty__icon
+  &__icon {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__action {
+    position: relative;
+    width: 100%;
+  }
+
+  &__certificate {
+    position: relative;
+    padding-right: 71px;
+  }
+
+  // .warranty__wrapper
+  &__wrapper {
+    position: absolute;
+    right: 120px;
+    bottom: 0;
+  }
+
+  // .warranty__img-wrapper
+  &__img-wrapper {
+    position: relative;
+    bottom: 0;
+    z-index: 2;
+    height: auto;
+    width: 423px;
+    transform: translateY(50%) rotate(10deg);
+    
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      right: -16%;
+      top: 14%;
+      z-index: -1;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      border-radius: 12px;
+      background: #FF005C33;
+    }
+    // z-index: 1;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   right: -120px;
+    //   bottom: -230px;
+    //   z-index: -1;
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   transform: rotate(100deg);
+    //   background: rgba(255, 0, 92, 0.2);
+    // }
+  }
+
+  // .warranty__action
+  &__link {
+    position: absolute;
+    bottom: 71px;
+    left: 0;
+    z-index: 3;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-end;
+    max-height: 56px;
+    padding: 16px 18px;
+    // margin-bottom: 71px;
+    border-radius: 40px;
+    background: rgba(17, 17, 17, 0.6);
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.05);
+    transition: $transition-default;
+    
+    @include hover {
+      background-color: $color-white;
+      color: rgba(17, 17, 17, 0.6);
+    }
+
+    // .warranty__action-icon-wrapper
+    &-icon-wrapper {
+      width: 23px;
+      height: 23px;
+      margin-right: 8px;
+    }
+  }
+}
+// .test {
+//   display: flex;
+//   height: 100%;
+//   background-image: url('../../img/certificate1.png');
+//   background-repeat: no-repeat;
+//   background-position: right;
+//   background-size: contain;
+// }

@@ -1,0 +1,107 @@
+@import "./utils/reset";
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+// libs
+@import "./utils/libs";
+
+@import "../../node_modules/swiper/swiper.css";
+@import "./libs/swiper-bundle";
+
+// utils
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/font-styles";
+@import "./utils/fonts";
+@import "./utils/anim";
+@import "./utils/global";
+
+// UI
+@import "./controls/custom-button";
+@import "./controls/custom-dropdown";
+@import "./controls/custom-input";
+@import "./controls/custom-checkbox";
+@import "./controls/custom-tag";
+
+// components
+@import "./components/sale-rental-cabins.scss";
+@import "./components/form-calculate-price.scss";
+@import "./components/about-company";
+@import "./components/sale-rental-relinking.scss";
+@import "./components/warranty";
+//Cards
+@import "./components/cards/product-card";
+@import "./components/actions-slider";
+//Cards
+@import "./components/cards/small-product-card";
+@import "./components/showcase";
+@import "./components/realization-projects";
+@import "./components/our-clients";
+@import "./components/letters-appreciation";
+@import "./components/counseling";
+//Cards
+@import "./components/cards/manager-card";
+@import "./components/custom-header";
+@import "./components/custom-footer";
+
+@import "./components/socials";
+@import "./components/articles-slider";
+@import "./components/services-cards";
+//Cards
+@import "./components/cards/service-card";
+@import "./components/services-info";
+@import "./components/products-listing";
+@import "./components/benefits";
+@import "./components/info-block";
+@import "./components/centered-slider";
+@import "./components/delivery-block";
+@import "./components/service-block";
+@import "./components/delivery-accordion";
+//Cards
+@import "./components/articles-list";
+@import "./components/cards/article-big-card";
+@import "./components/cards/article-card";
+@import "./components/main-product";
+@import "./components/main-product-slider";
+@import "./components/gift-info";
+@import "./components/product-tabs";
+@import "./components/equipment-accordion";
+@import "./components/catalog-nav";
+
+//Forms
+@import "./components/forms/dealer-form";
+//Cards
+
+@import "./modals/modal-wrapper";
+
+// pages
+@import "./pages/index";
+@import "./pages/kit";
+@import "./pages/error-page";
+@import "./pages/processing-policy";
+@import "./pages/reviews";
+@import "./pages/services";
+@import "./pages/service-detail";
+@import "./pages/products";
+@import "./pages/about-us";
+@import "./pages/production";
+@import "./pages/contacts";
+@import "./pages/partnership";
+@import "./pages/delivery";
+@import "./pages/actions";
+@import "./pages/articles";
+@import "./pages/detail-product";
+
+//common 
+@import "./common/custom-tabs";
+@import "./common/accordion";
+@import "./common/unfolding-content"; 
+@import "./common/breadcrumbs";

@@ -1,0 +1,18 @@
+$b: '.processing-policy-page';
+
+#{$b} {
+  // .processing-policy-page__inner
+  &__inner {
+    padding-bottom: 70px;
+  }
+
+  // .processing-policy-page__content
+  &__content {
+    max-width: 800px;
+  }
+
+  // .processing-policy-page__title 
+  &__title {
+    margin-bottom: 40px;
+  }
+}

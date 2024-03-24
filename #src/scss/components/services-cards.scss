@@ -1,0 +1,22 @@
+$b: '.services-cards';
+
+#{$b} {
+  // .services-cards__inner
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, calc((100% - 24px) / 4));
+    gap: 8px;
+
+    @include mobile() {
+      display: grid;
+      grid-template-columns: repeat(3, calc((100% - 16px) / 3));
+      gap: 8px;
+    }
+
+    @include mobile-md() {
+      display: grid;
+      grid-template-columns: repeat(2, calc((100% - 12px) / 2));
+      gap: 12px;
+    }
+  }
+}

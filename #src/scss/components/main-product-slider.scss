@@ -1,0 +1,21 @@
+$b: '.main-product-slider';
+
+#{$b} {
+  // .main-product-slider__big-slider
+  &__big-slider {
+    margin-bottom: 10px;
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  // .main-product-slider__preview-slider
+  &__preview-slider {
+    .swiper-slide-thumb-active {
+      border: 1px solid $color-dark;
+    }
+  }
+}

@@ -1,0 +1,69 @@
+$b: '.dealer-form';
+
+#{$b} {
+    // .dealer-form__item
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    // .dealer-form__items
+    &__items {
+      display: flex;
+      margin-bottom: 10px;
+
+      @include low-desktop() {
+        display: block;
+      }
+
+      .custom-input {
+        width: 100%;
+
+        &:not(:last-child) {
+          margin-right: 10px;
+
+          @include low-desktop() {
+            margin-right: unset;
+            margin-bottom: 10px;
+          }
+        }
+      }
+    }
+
+    // .dealer-form__file
+    &__file {
+      display: inline-flex;
+      align-items: center;
+      background-color: $color-muted;
+      padding: 12px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: $transition-default;
+
+      &:hover {
+        color: $color-muted;
+        background-color: $color-dark;
+      }
+      
+      #{$b}__icon-wrapper {
+        width: 13px;
+        height: 13px;
+        margin-right: 5px;
+        
+        .icon {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      input {
+        display: none;
+      }
+    }
+
+    // .dealer-form__submit
+    &__submit {
+      width: auto;
+      margin-bottom: 8px;
+    }
+}
